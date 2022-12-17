@@ -156,7 +156,32 @@ def trocarAB(a, b):
 
 for i in range(5):
     a, b = [int(x) for x in input().split()] #transforma em int os valores recebidos do input().split()
-    trocarAB(a, b)'''
+    trocarAB(a, b)
 
 a, b, c = [int(x) for x in input().split()]
 print(a, b, c)
+
+#Atividade 13
+def age(par):
+    dias = par % 30
+    aux = (par - dias) / 30
+    mes = int(aux % 12)
+    ano = int((aux - mes) / 12)
+    print(f'{ano} ano(s), {mes} mes(es) e {dias} dia(s)')
+num = input().split(" ") #Os dados vão ser atribuídos a um vetor, que vai ser chamado na estrutura abaixo
+for i in range(3):
+    age(int(num[i])) #Passa por cada um dos elementos do vetor, de 0 a 2
+    i += 1
+
+#Atividade 14
+#Vai ser exatamente a mesma coisa do código acima, a única coisa que muda é o print do final da função
+def age(par):
+    dias = par % 30
+    aux = (par - dias) / 30
+    mes = int(aux % 12)
+    ano = int((aux - mes) / 12)
+    print(ano, mes, dias)
+num = input().split(" ")
+for i in range(3):
+    age(int(num[i]))
+    i += 1'''
