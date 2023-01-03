@@ -202,4 +202,29 @@ def divisoresPrimos(a):
             i += 1
         print(contador)'''
 
-#Questão 28
+#Questão 32
+'''verifica = True
+numeros = []
+while verifica:
+    aux = int(input())
+    if aux != -1:
+        numeros.append(aux ** -1)
+    else:
+        verifica = False
+print(int(len(numeros)/sum(numeros)))'''
+
+#Questão 33
+'''lista = input().split()
+lista.pop(len(lista) - 1)
+print(' '.join(map(str, list(reversed(lista)))))'''
+
+#Questão 34
+def encontraIndice(lista, tamanho):
+    for i in range(len(lista)):
+        if lista[i] <= tamanho:
+            return lista.index(lista[i])
+    return -1
+bill = int(input())
+aux = input().split()
+tamanhos = sorted(list(map(int, aux)))
+encontraIndice(tamanhos, bill)
