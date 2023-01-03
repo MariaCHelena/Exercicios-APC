@@ -185,3 +185,7 @@ num = input().split(" ")
 for i in range(3):
     age(int(num[i]))
     i += 1'''
+
+
+tot = [float(str(x).replace(',','.')) for x in input().split()]
+print(sum(tot))
