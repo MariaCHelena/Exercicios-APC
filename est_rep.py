@@ -247,5 +247,60 @@ else:
 '''print('c' > 'b')'''
 
 #Questão 11
-palavra = input()
-print(palavra.upper())
+'''palavra = input()
+print(palavra.upper())'''
+
+
+#Questão 10
+'''for x in range(0, int(input())):
+    lista = input()
+    result = ''
+    letra = ''
+    numero = 0
+    i = 0
+    while i < len(lista):
+        if lista[i].isnumeric() == False:
+            letra = lista[i]
+            i += 1
+        else:
+            while lista[i].isnumeric():
+                numero = numero * 10 + int(lista[i])
+                i += 1
+                if i > len(lista):
+                    break
+            result += letra * numero
+            numero = 0
+    print(result)'''
+
+#Questão 3
+'''vet = []
+numero = int(input())
+soma = 0
+for i in range(2):
+    vet.append(list(map(int, input().strip().split())))
+for j in range(0, numero):
+    soma += vet[j][j] * vet[j + 1][j]
+if soma == 0:
+    print('ortogonais')
+else:
+    print(soma)'''
+    
+#Questão 18
+n = int(input())
+def sinuquera(n):
+    n -= 1
+    i = 1
+    soma = 0
+    while i < n:
+        soma += 1
+        i += 1
+        n -= 1
+    return soma
+
+def sinuquera(n):
+    if n != 1 and n % 2 == 0:
+        return int((n / 2) - 1)
+    elif n != 1 and n % 2 == 1:
+        return int(((n - 1)/2))
+    else:
+        return 0
