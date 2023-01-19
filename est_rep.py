@@ -286,7 +286,7 @@ else:
     print(soma)'''
     
 #Questão 18
-n = int(input())
+'''n = int(input())
 def sinuquera(n):
     n -= 1
     i = 1
@@ -303,4 +303,64 @@ def sinuquera(n):
     elif n != 1 and n % 2 == 1:
         return int(((n - 1)/2))
     else:
-        return 0
+        return 0'''
+
+#Questão 19
+'''def fibonacci(n):
+    num1, num2, aux = 0, 1, 0
+    fibonacci = [num1, num2]
+    for i in range(n):
+        aux = num1 + num2
+        num1 = num2
+        num2 = aux
+        fibonacci.append(num2)
+    return fibonacci[n]'''
+
+#Questão 20
+'''def fibonacci(n):
+    num1, num2, aux = 0, 1, 0
+    if n == 1:
+        fibonacci = f'{num1}'
+    else:
+        fibonacci = f'{num1} {num2} '
+        for i in range(n - 2):
+            aux = num1 + num2
+            num1 = num2
+            num2 = aux
+            fibonacci += f'{num2} '
+    print(fibonacci)'''
+    
+#Questão 21
+'''n = int(input())
+for i in range(n):
+    if 5 % i == 0 and 3 % i == 0:
+        print('Fizz Buzz')
+    elif 3 % i == 0:
+        print('Fizz')
+    elif 5 % i == 0:
+        print('Buzz')
+    else:
+        print(i)'''
+        
+#Questão 22
+'''def pattern(n):
+    aux = n
+    while aux > 0:
+        print(aux)
+        aux -= 5
+    while aux < n:
+        print(aux)
+        aux += 5
+    print(aux)'''
+    
+#Questão 28
+'''arr = list(map(int, input().split()))
+print(f'{min(arr)} {arr.index(min(arr))}')
+print(f'{max(arr)} {arr.index(max(arr))}')
+print(' '.join(map(str, arr)))'''
+
+#Questão 29
+problemas = int(input())
+for i in range(problemas):
+    aux = 0
+
