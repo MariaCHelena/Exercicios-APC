@@ -219,7 +219,7 @@ lista.pop(len(lista) - 1)
 print(' '.join(map(str, list(reversed(lista)))))'''
 
 #Questão 34
-def encontraIndice(lista, tamanho):
+'''def encontraIndice(lista, tamanho):
     for i in range(len(lista)):
         if lista[i] <= tamanho:
             return lista.index(lista[i])
@@ -227,4 +227,23 @@ def encontraIndice(lista, tamanho):
 bill = int(input())
 aux = input().split()
 tamanhos = sorted(list(map(int, aux)))
-encontraIndice(tamanhos, bill)
+encontraIndice(tamanhos, bill)'''
+
+#Questão 15
+cidadeA, cidadeB, crescA, crescB = input().split()
+cidadeA, cidadeB, crescA, crescB = float(cidadeA), float(cidadeB), float(crescA), float(crescB)
+contador = 0
+if crescA >= crescB:
+    while cidadeA < cidadeB and contador < 1000:
+        cidadeA += cidadeA * crescA / 100
+        int(cidadeA)
+        cidadeB += cidadeB * crescB / 100
+        int(cidadeB)
+        print(cidadeA)
+        contador += 1
+    if contador < 1000:
+        print(f'Vai alcancar em {contador} ano(s).')
+    else:
+        print('Mais de um milenio.')
+else:
+    print("A nunca alcancara B.")
